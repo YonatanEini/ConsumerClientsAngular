@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+* {
+  transition: all 0.3s ease-out;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15%;
+  margin-left: 80px;
+}
+
+h3 {
+  color: #ffffffe5;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+
+  &.small {
+    font-size: 18px;
+    margin-top: 2px;
+    text-align: center;
+  }
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: black;
+  font-family: courier, sans;
+  font-size: 19px;
+}
+
+.card1 {
+  display: block;
+  position: relative;
+  background-color: #0f0f0f;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 30px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  margin-left: 30px;
+  height: 420px;
+  width: 350px;
+  animation: bottom 0.8s var(--delay) both;
+  border-radius: 30px;
+
+    p{
+        color: rgba(245, 245, 245, 0.877);
+    }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background-color: white;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 80% 15%;
+    transition: transform 0.8s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(21);
+  }
+}
+
+.card1:hover {
+  p {
+    transition: all 0.3s ease-out;
+    color: black;
+    
+  }
+  h3 {
+    transition: all 0.3s ease-out;
+    color: black;
+  }
+  a{
+      opacity: 0.6;
+  }
+
+  border: rgba(5, 59, 5, 0.144) 2px solid;
+  transition: 0s;
+  opacity: 0.3;
+  filter: alpha(opacity = 30);
+}
+
+
+.card2 {
+  display: block;
+  position: relative;
+  max-width: 262px;
+  background-color: #1e0644d3;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(2.15);
+  }
+}
+
+.card3 {
+  display: block;
+  position: relative;
+  background-color: #19033bb6;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 190px;
+  text-decoration: none;
+  overflow: hidden;
+  width: 350px;
+  height: 420px;
+  border-radius: 30px;
+  animation: bottom 0.8s var(--delay) both;
+  color: rgba(245, 245, 245, 0.877);
+
+  .go-corner {
+    opacity: 0.7;
+  }
+
+  &:hover {
+    border: 1px solid #f2f8f9;
+    box-shadow: 0px 0px 15px 15px rgba(80, 80, 80, 0.5);
+    z-index: 500;
+  
+  }
+  p{
+    color: rgba(245, 245, 245, 0.877);
+
+  }
+}
+
+.card3:hover {
+  p{color: white}
+  .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+  ~ .card1{
+      opacity: 0.6;
+  }
+}
+
+.card4 {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 262px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  
+  .go-corner {
+    background-color: #00838d;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8F479A 1%, #DC2A74 100%);
+  }
+  
+  .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+
+  &:hover {
+    border: 1px solid #CD3D73;
+  }
+  
+  h3 {margin-top: 8px;}
+}
+
+.card4:hover {
+  .go-corner {
+    margin-right: -12px;
+  }
+  .go-arrow {
+    opacity: 1;
+  }
+}
+@keyframes bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+    }
+  }
+  h1{
+    animation: bottom 1.5s both;
+    visibility: hidden;
+  }
+
+  
+
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+        flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  
+  
+  
+  
+  .btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .effect04 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: white;
+    outline: solid  2px #000;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+  
+  .effect04::before,
+  .effect04 span{
+      margin: 0 auto;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s;
+  }
+  
+  .effect04:hover{
+  
+    background-color: #000;
+  }
+  
+  .effect04:hover span{
+    -webkit-transform: translateY(-400%) scale(-0.1,20);
+            transform: translateY(-400%) scale(-0.1,20);
+  }
+  
+  .effect04::before{
+    content: attr(data-sm-link-text);
+      color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1,20);
+            transform: translateY(500%) scale(-0.1,20);
+  }
+  
+  .effect04:hover::before{
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1,1);
+            transform: translateY(0) scale(1,1);
+  }
+  

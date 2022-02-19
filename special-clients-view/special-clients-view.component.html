@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+      <div [class.opacityClass]="OnCard2==true || OnCard3==true" class="col">
+        <div (mouseover)='OnCard1Hover()' (mouseout)='NonCard1Hover()' class="card"  style="--delay: .7s" tabindex="0" >
+          <div class="card-image">
+            <img id="firstImage" src="assets/gaugesApplicationImg.png" style="height:198px"  alt="">
+          </div>
+          <div class="card-content">
+            <p class="kicker">Gauges Application</p>
+            <h2>Using Udp Protocol On Port 10,000 To Present Live Data</h2>
+            <p>Activate Application In Order To See Live Updated Data!</p>
+          </div>
+          <div class="card-footer">
+            <a href="" role="button">
+              <span>Activate Gauges Application</span>
+            </a>
+            <svg class="icon" viewBox="0 0 16 16">
+              <g fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                <line x1="0.5" y1="8.5" x2="15.5" y2="8.5"></line>
+                <polyline points="10.5,3.5 15.5,8.5 10.5,13.5 "></polyline>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div [class.opacityClass]="OnCrad1==true || OnCard3==true" class="col">
+        <div (mouseover)='OnCard2Hover()' (mouseout)='NonCard2Hover()' class="card" style="--delay: 1s" tabindex="0">
+          <div class="card-image">
+              <img src="assets/analyzeImage.png" style="height: 198px;" alt="">
+          </div>
+          <div  class="card-content">
+            <p class="kicker">Live Graphs Application</p>
+            <h2>Using Python Http Analyze Server On Port 5000</h2>
+            <p>See Your Live Updated Graphs On Angular Platfrom!</p>
+          </div>
+          <div  class="card-footer">
+            <a href="#" role="button">
+              <span>Open Angular Application </span>
+            </a>
+            <svg class="icon" viewBox="0 0 16 16">
+              <g fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                <line x1="0.5" y1="8.5" x2="15.5" y2="8.5"></line>
+                <polyline points="10.5,3.5 15.5,8.5 10.5,13.5 "></polyline>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div [class.opacityClass]="OnCard2==true || OnCrad1==true" class="col">
+        <div  (mouseover)='OnCard3Hover()' (mouseout)='NonCard3Hover()' class="card" style="--delay: 1.2s" tabindex="0">
+          <div class="card-image">
+            <img id="thirdImg" src="assets/filterApplicationImage.png" style="height:198px" alt="">
+          </div>
+          <div class="card-content">
+            <p class="kicker">Filter Application</p>
+            <h2>Receive Data in Tcp Protocol On Port 11,000</h2>
+            <p>Filter Your Data Through Dates And Times And See The Results!</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" role="button">
+              <span>Activate Filter Appliccation</span>
+            </a>
+            <svg class="icon" viewBox="0 0 16 16">
+              <g fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                <line x1="0.5" y1="8.5" x2="15.5" y2="8.5"></line>
+                <polyline points="10.5,3.5 15.5,8.5 10.5,13.5 "></polyline>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
